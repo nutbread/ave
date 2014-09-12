@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="description" content="A set of experimental audio/video filters to be used with AviSynth" />
+	<meta name="keywords" content="ave,avisynth,audio,video,filters,c++" />
+	<meta name="author" content="nutbread" />
+	<title>Audio-Video Extensions</title>
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+<div class="header_bar">
+	<div class="main main_no_overflow header">
+
+		<table class="header_table"><tbody>
+			<tr>
+				<td class="header_table_cell">
+					<div class="header_table_name">
+						<a class="header_table_name_user link_external link_author light_underline" href="https://nutbread.github.io/"><span>nutbread</span></a><span class="header_table_name_separator">/</span><a href="" class="header_table_name_title link_external link_title light_underline"><span>ave</span></a>
+					</div>
+				</td>
+				<td class="header_table_cell">
+					<div class="header_table_separator"></div>
+				</td>
+				<td class="header_table_cell header_table_cell_full">
+					<div class="header_table_description">
+						<div class="header_table_description_name">Audio-video extensions</div>
+						<div class="header_table_description_body">A set of experimental audio/video filters to be used with AviSynth</div>
+					</div>
+				</td>
+				<td class="header_table_cell">
+					<a class="header_table_view_on_github link_external link_view_on_github light_nohover_color_hover" href="https://github.com/nutbread/ave">
+						<div class="header_table_view_on_github_line1">view on</div>
+						<div class="header_table_view_on_github_line2">github</div>
+					</a>
+				</td>
+			</tr>
+		</tbody></table>
+
+	</div>
+</div>
+<div class="main body">
+
+	<h1 id="about"><span class="hardlink_text">About<a class="hardlink" href="#about"></a></span></h1>
+	<p>
+		Audio-video extensions is a collection of various <a class="link_external light_underline" href="http://avisynth.nl/index.php/Main_Page" target="_blank"><span>AviSynth</span></a> filters used to modify audio or video.
+	</p>
+	<p>
+		This is mainly a collection of miscellaneous filters, as they have no real theme with one another. Some are more useful and/or practical than others.
+	</p>
+
+	<h4 id="required.software"><span class="hardlink_text">Required software<a class="hardlink" href="#required.software"></a></span></h4>
+	<p>
+		<ul>
+			<li><a class="link_external light_underline" href="http://avisynth.nl/index.php/Main_Page#Official_builds" target="_blank"><span>AviSynth</span></a> &ndash; supports 2.5.8 and 2.6; both x86 and x64</li>
+		</ul>
+	</p>
+
+	<h4 id="downloads"><span class="hardlink_text">Downloads<a class="hardlink" href="#downloads"></a></span></h4>
+	<p>
+		<ul>
+			<li>
+				<a class="link_codebase_raw light_underline" href="https://raw.githubusercontent.com/nutbread/ave/master/builds/AVExtensions.dll" target="_blank"><span>x86</span></a> | <a class="link_codebase_raw light_underline" href="https://raw.githubusercontent.com/nutbread/ave/master/builds/AVExtensions-x64.dll" target="_blank"><span>x64</span></a> &ndash;
+				compiled using Visual Studio 2010
+			</li>
+		</ul>
+	</p>
+
+	<h4 id="usage"><span class="hardlink_text">Usage<a class="hardlink" href="#usage"></a></span></h4>
+	<p>
+		There are two ways to use this extension:
+	</p>
+	<p>
+		<ul>
+			<li>
+				Put it in your "<code>AviSynth\plugins</code>" (or "<code>AviSynth\plugins 64</code>" for x64)
+			</li>
+			<li>
+				Load it manually in a script. The following example will work if you have both versions of the DLL, and will automatically use the correct architecture for whichever version of AviSynth is being used.
+			</li>
+		</ul>
+	</p>
+	<p>
+		<div class="codeblock codeblock_pre"><div class="codeblock_inner">try {
+    LoadPlugin("AVExtensions.dll")
+}
+catch (e) {
+    LoadPlugin("AVExtensions-x64.dll")
+}</div></div>
+	</p>
+
+	<h4 id="documentation"><span class="hardlink_text">Documentation<a class="hardlink" href="#documentation"></a></span></h4>
+	<p>
+		Some limited documentation is available in the <code>.cpp</code> files located in the <code>Audio</code>, <code>Video</code>, and <code>Misc</code> project directories. They should appear in a large block comment inside the <code>Class::registerClass</code> function.
+	</p>
+	<p>
+		Eventually this documentation may be moved to this page as well.
+	</p>
+
+</div>
+
+
+</body>
+</html>
+
