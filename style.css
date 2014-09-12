@@ -85,7 +85,7 @@ a.hardlink {
 }
 a.hardlink:hover {
 	text-decoration: none;
-	color: #3abde8;
+	color: #1257e3;
 }
 a.hardlink:after {
 	content: "#";
@@ -135,7 +135,7 @@ code.nowrap {
 
 
 a {
-	color: #3abde8;
+	color: #1257e3;
 	cursor: pointer;
 	text-decoration: none;
 }
@@ -146,13 +146,13 @@ a.light_underline {
 	color: #c8c8c8;
 }
 a.light_underline>span {
-	color: #3abde8;
+	color: #1257e3;
 }
 a.light_nohover_color_hover {
 	color: #c8c8c8;
 }
 a.light_nohover_color_hover:hover {
-	color: #3abde8;
+	color: #1257e3;
 	text-decoration: none;
 }
 
@@ -255,17 +255,17 @@ a.light_nohover_color_hover:hover {
 	font-style: italic;
 }
 .colored {
-	color: #3abde8;
+	color: #1257e3;
 }
 
 *::selection {
 	color: #ffffff;
-	background: #3abde8;
+	background: #1257e3;
 	text-shadow: none;
 }
 *::-moz-selection {
 	color: #ffffff ;
-	background: #3abde8;
+	background: #1257e3;
 	text-shadow: none;
 }
 
