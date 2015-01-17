@@ -293,3 +293,25 @@ $(call object_expand,MArchitecture26) : $(call source_expand,Misc\MArchitecture.
 	$(call compile_info,26)
 	$(call compile,26)
 
+
+
+# VNoClear
+.PHONY : VNoClear
+.PHONY : VNoClear25
+.PHONY : VNoClear26
+VNoClear   : $(call version_expand,VNoClear)
+VNoClear25 : $(call object_expand,VNoClear25)
+VNoClear26 : $(call object_expand,VNoClear26)
+
+$(call source_expand,Video\VNoClear.cpp) : $(call source_expand,Video\VNoClear.hpp)
+$(call source_expand,Video\VNoClear.hpp) : $(call source_expand,Header.hpp)
+
+$(call object_expand,VNoClear25) : $(call source_expand,Video\VNoClear.cpp)
+	$(call compile_info,25)
+	$(call compile,25)
+
+$(call object_expand,VNoClear26) : $(call source_expand,Video\VNoClear.cpp)
+	$(call compile_info,26)
+	$(call compile,26)
+
+

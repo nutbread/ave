@@ -9,6 +9,6 @@ FLAGS_COMPILE := /EHsc /O2
 FLAGS_LINK :=
 OUTPUT_FLAGS := > NUL 2> NUL
 LINK_LIBRARIES := user32.lib gdi32.lib opengl32.lib glu32.lib
-INCLUDE_FUNCTIONS := VCache VChannel VNoise VMostCommon VBlend VCompare VBlur AApproximate AVideoToWaveform VGetPixel VSubtitle VSimilar VSlideFPS MArchitecture
+INCLUDE_FUNCTIONS := VCache VChannel VNoise VMostCommon VBlend VCompare VBlur AApproximate AVideoToWaveform VGetPixel VSubtitle VSimilar VSlideFPS MArchitecture VNoClear
 
 
